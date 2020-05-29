@@ -25,7 +25,7 @@ class data_manipulation:
            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = test_set_size)
            return X,y,X_train, X_test, y_train, y_test
 
-    def data_scaling(X, y, x_to_scale, y_to_scale):
+    def data_scaling(x_to_scale, y_to_scale):
         from sklearn.preprocessing import StandardScaler
         sc = StandardScaler
         x_to_scale = sc.fit_transform(x_to_scale)
